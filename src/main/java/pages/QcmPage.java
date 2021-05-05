@@ -44,47 +44,6 @@ public class QcmPage extends AbstractTest {
            ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
            element.click();
        }
-
-/*
-        for(WebElement radioButton : radioButtons) {
-
-        }
-
-       for (WebElement radioButton : radioButtons) {
-           String val = radioButton.getAttribute("name");
-           System.out.println(val);
-
-           int num = Integer.parseInt(val);
-           int index = findIndex(responses, num);
-
-           if (index == num) {
-           }
-
-            /*
-            for(int i=0; i < nbrQuestions; i++){
-                driver.findElement(By.tagName("div"));
-                driver.findElement(By.)
-
-                Questions.get(i).click;
-
-                driver.findElement(By.name(responses)).click;
-            }
-
-        }
-
-        */
-       /*
-        ArrayList<Integer> values = new ArrayList<>();
-        Integer[] array = {1, 2, 1, 2, 2, 3, 2, 4, 1, 3, 4, 2, 3, 2, 4, 3, 3, 1, 2, 2};
-
-        Collections.addAll(values, array);
-
-        for(int value : values) {
-            driver.findElement(By.xpath("//input[@value="+value+"]")).click();
-        }
-
-        */
-
     }
 
 
