@@ -3,6 +3,7 @@ package utils;
 import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -54,13 +55,5 @@ public class AbstractTest {
         return isElementPresent;
     }
 
-    public static int findIndex(int arr[], int t)
-    {
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i : arr)
-            list.add(i);
-
-        return list.indexOf(t);
-    }
 
 }

@@ -1,8 +1,12 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import utils.AbstractTest;
+
+import java.util.ArrayList;
 
 public class ChoiceQcmPage extends AbstractTest {
 
