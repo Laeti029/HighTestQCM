@@ -2,21 +2,20 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import utils.AbstractTest;
+import utils.AbstractPage;
 
-public class HomePage extends AbstractTest {
+public class HomePage extends AbstractPage {
+    private final WebDriver driver;
 
-    private WebDriver driver;
-
-    private final By BTN_ONGLET_TOOLBOX = By.xpath("(//a[contains(@href, '/boite-outils')])");
+    private final Selecteur BTN_TAB_TOOLBOX = new Selecteur("Onglet Toolbox", By.xpath("(//a[contains(@href, '/boite-outils')])"));
 
     public HomePage(WebDriver driver) {
         super(driver);
         this.driver = driver;
     }
 
-    public ChoiceQcmPage clickOnglet() {
-        clickElement(BTN_ONGLET_TOOLBOX);
+    public ChoiceQcmPage clickTab() {
+        clickElement(BTN_TAB_TOOLBOX);
         return new ChoiceQcmPage(driver);
     }
 }

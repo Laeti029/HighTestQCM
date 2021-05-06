@@ -1,17 +1,13 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-import utils.AbstractTest;
+import utils.AbstractPage;
 
-import java.util.ArrayList;
+public class ChoiceQcmPage extends AbstractPage {
+    private final WebDriver driver;
 
-public class ChoiceQcmPage extends AbstractTest {
-
-    private WebDriver driver;
-    private final By BTN_ISTQB_FOUNDATION = By.xpath("(//a[contains(@href, 'http://www.hightest.nc/ressources/test-istqb.php')])");
+    private final Selecteur  BTN_ISTQB_FOUNDATION = new Selecteur("Le bouton pour ouvrir le test ISTQB Foundation", By.xpath("(//a[contains(@href, 'http://www.hightest.nc/ressources/test-istqb.php')])"));
 
     public ChoiceQcmPage(WebDriver driver) {
         super(driver);
@@ -22,6 +18,5 @@ public class ChoiceQcmPage extends AbstractTest {
         clickElement(BTN_ISTQB_FOUNDATION);
         return new QcmPage(driver);
     }
-
 
 }

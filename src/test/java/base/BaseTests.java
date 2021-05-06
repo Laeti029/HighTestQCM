@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 import pages.HomePage;
 
 public class BaseTests {
-
     private WebDriver driver;
     protected HomePage homePage;
 
@@ -22,10 +21,10 @@ public class BaseTests {
 
     @AfterClass
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		BaseTests test = new BaseTests();
 		test.setUp();
 	}
